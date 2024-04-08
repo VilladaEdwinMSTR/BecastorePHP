@@ -1,0 +1,264 @@
+/*Marquesina del login.html empieza aqui*/
+body{
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 100%;
+    display: block;  
+}
+
+button{
+    cursor: pointer;
+    pointer-events: auto;
+}
+#Marquesina{
+    z-index: 1;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    min-width: 100% ;
+    min-height: 10%;
+    max-height: 10%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(41, 108, 21, 0.5);
+    align-items: center;
+    justify-content: space-between;
+    
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2),
+                0 2px 10px 0 rgba(0,0,0,0.18);
+    display: 1;
+}
+
+#Op_marquesina{
+    min-width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    margin-right: 1%;
+}
+
+#logoHorizontal{
+    margin-left: 1%;
+    font-family: "ArialS", sans-serif;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: rgb(232, 232, 232);
+    margin-left:1%;
+}
+
+.btnMarq{
+    min-width: 100px;
+    min-height: 80px;
+    margin-right: 1%;
+    /* border: 1px solid #2a9e15; */
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.btnMarq:hover{
+    background-color: rgba(22, 111, 65, 0.591)
+}
+
+#btnLogin, #btnSignUp{
+    background-color: transparent;
+    font-size: 15px;
+    border: none;
+    color: rgb(232, 232, 232);
+    min-height: 50px;
+    min-width: 80px;
+    cursor: pointer;
+}
+
+:is(#btnLogin,#btnSignUp):hover{
+    color: white;
+    font-size: 17px;
+    font-weight:100;
+    text-shadow:
+    1px 1px 1px rgb(223, 255, 171),
+    0 0 1em rgba(255, 255, 255, 0.18),
+    0 0 0.2em rgba(255, 255, 255, 0.217);
+}
+
+/*Marquesina del login.html termina aqui*/
+
+/* efectos por defecto */
+body {
+    font-family: 'Overpass', sans-serif;
+    font-weight: normal;
+    font-size: 100%;
+    color: #1b262c;
+    
+    margin: 0;
+    background-color: #5f6769,0.5;
+}
+
+/* efectos para el contenedor de pantalla completa */
+#contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    
+    background-image: url(css\img\castor.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* contenedor del login a la izquierda */
+#contenedorcentrado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
+    
+    min-width: 380px;
+    max-width: 900px;
+    width: 90%;
+    
+    background-color: rgba(41, 108, 21, 0.5);
+    
+    /*opacity: 0.50;
+    filter: alpha(opacity=50);*/
+    
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+
+/* seccion de la derecha */
+/* seccion de la derecha */
+/* por defecto */
+#derecho {
+    /*display: flex;
+    align-items:center;
+    justify-content:center;*/
+    
+    text-align: center;
+    width: 100%;
+    
+    opacity: 0.70;
+    filter: alpha(opacity=70);
+    
+    padding:20px 20px 20px 50px;
+    box-sizing: border-box;
+}
+
+.titulo {
+    font-size: 300%;
+    color:#dfcdc3;
+}
+
+.logo-empresa img {
+    width: 60%;
+}
+
+hr {
+    border-top: 1px solid #8c8b8b;
+	border-bottom: 1px solid #dfcdc3;
+    
+}
+.pie-form {
+    font-size: 90%;
+    text-align: center;    
+    margin-top: 15px;
+}
+
+.pie-form a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 3px;
+}
+/*Login css*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-image: url('img/castor.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+* {
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 100%;
+    padding: 15px;
+}
+.formulario{
+    background-color: rgba(112, 160, 112, 0.5); /* Verde con 50% de opacidad */
+    margin-top: 150px;
+    padding: 3px;
+}
+h1{
+    text-align: center;
+    color: #1a2537;
+    font-size: 40px;
+}
+input[type="text"],
+input[type="password"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+.input-contenedor{
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+.icon{
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+.button{
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background:  #1a2537;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover{
+    background: cadetblue;
+}
+p{
+    text-align: center;
+    color: rgb(196, 196, 196);
+}
+.link{
+    text-decoration: none;
+      color: #1a2537;
+    font-weight: 600;
+}
+.link:hover{
+     color: cadetblue;
+}
+@media(min-width:768px)
+{
+    .formulario{
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
+}

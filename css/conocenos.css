@@ -1,0 +1,157 @@
+/*Marquesina del conocenos.html empieza aqui*/
+body{
+        overflow-y: auto;
+        overflow-x: hidden;
+        min-height: 100%;
+        display: block;  
+}
+
+#Marquesina{
+    z-index: 1;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    min-width: 100% ;
+    min-height: 10%;
+    max-height: 10%;
+    display: flex;
+    flex-direction: row;
+    background-color: #89AC76;
+    align-items: center;
+    justify-content: space-between;
+    
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2),
+                0 2px 10px 0 rgba(0,0,0,0.18);
+    display: 1;
+}
+
+#Op_marquesina{
+    min-width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    margin-right: 1%;
+}
+
+#logo{
+    margin-left: 1%;
+    font-family: "ArialS", sans-serif;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: rgb(232, 232, 232);
+}
+
+.btnMarq{
+    min-width: 100px;
+    min-height: 80px;
+    margin-right: 1%;
+    /* border: 1px solid #2a9e15; */
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.btnMarq:hover{
+    background-color: rgb(109, 147, 5)
+}
+
+:is(#btnLogin,#btnSignUp):hover{
+    color: white;
+    font-size: 17px;
+    font-weight:100;
+    text-shadow:
+    1px 1px 1px rgb(223, 255, 171),
+    0 0 1em rgba(255, 255, 255, 0.18),
+    0 0 0.2em rgba(255, 255, 255, 0.217);
+}
+#btnLogin, #btnSignUp{
+    background-color: transparent;
+    font-size: 15px;
+    border: none;
+    color: rgb(232, 232, 232);
+    min-height: 50px;
+    min-width: 80px;
+    cursor: pointer;
+}
+
+#Conocenos{
+    display: -1px;   
+}
+
+
+/*Marquesina del conocenos.html termina aqui*/
+main{
+    position: relative;
+    z-index: -10;
+
+    /*IMAGEN RESPONSIVA*/
+    background-image: url("img/Castor_Inincio_Comiendo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 105%;
+    margin-left: -8px;
+}
+
+.contenedorFlex{
+    width: 100%;
+    margin-left: -2%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.informacion{
+    margin-top: 2%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: -65%; */
+    border-radius: 10px; /* Redondear los bordes con un radio de 10px */
+    margin-bottom: 1%;
+    background-color: rgba(83, 83, 83, 0.228);
+}
+
+/* #Mision{
+    background-color: rgba(0, 255, 64, 0.228);
+}
+
+#Vision{
+    background-color: rgba(0, 255, 242, 0.228);
+}
+
+#Valores{
+    background-color: rgba(8, 206, 67, 0.228);
+
+} */
+
+
+.titulosConocenos{
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.textoConocenos{
+    width: 95%;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    color: white;
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em rgba(0,0,0,0.18),
+    0 0 0.2em rgba(0,0,0,0.18);
+    text-align: justify;
+    margin-top: -1%;
+    line-height: 1.7rem;
+    
+}
