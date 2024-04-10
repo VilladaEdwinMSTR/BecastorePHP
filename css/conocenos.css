@@ -4,6 +4,36 @@ body{
         overflow-x: hidden;
         min-height: 100%;
         display: block;  
+
+        /*IMAGEN RESPONSIVA*/
+    background-image: url("img/Castor_Inincio_Comiendo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* width: 105%; */
+    margin-left: -8px;
+}
+
+body::-webkit-scrollbar {
+    margin-top: 50px;
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+     display: none;  /*Ocultar scroll */
+} 
+
+body::-webkit-scrollbar-thumb {
+    background: #69b329dd;
+    border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #74c42dce;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+body::-webkit-scrollbar-thumb:active {
+    background-color: #69b329fe;
 }
 
 #Marquesina{
@@ -16,7 +46,7 @@ body{
     max-height: 10%;
     display: flex;
     flex-direction: row;
-    background-color: #89AC76;
+    background-color: #89ac7686;
     align-items: center;
     justify-content: space-between;
     
@@ -34,8 +64,8 @@ body{
     margin-right: 1%;
 }
 
-#logo{
-    margin-left: 1%;
+#logoHorizontal{
+    margin-left: 2%;
     font-family: "ArialS", sans-serif;
     font-style: normal;
     font-size: 1.5rem;
@@ -86,19 +116,19 @@ main{
     position: relative;
     z-index: -10;
 
-    /*IMAGEN RESPONSIVA*/
+    /* IMAGEN RESPONSIVA
     background-image: url("img/Castor_Inincio_Comiendo.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     width: 105%;
-    margin-left: -8px;
+    margin-left: -8px; */
 }
 
 .contenedorFlex{
     width: 100%;
-    margin-left: -2%;
+    /* margin-left: -2%; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
