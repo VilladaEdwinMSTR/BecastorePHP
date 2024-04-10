@@ -19,7 +19,7 @@
             <button onclick="location.href='signup.html'" id="btnSignUp">Sign up</button>
             <button onclick="location.href='login.html'" id="btnLogin">Log in</button>
         </div>
-    </div>   
+    </div>   mora lopez 
     <form class="formulario" action="iniciarSes.php" method="POST">
         <h1>Log In</h1>
         <div class="contenedor" >  
@@ -27,11 +27,11 @@
             <div id="div_error"></div> 
             
             <!-- Campos del formulario -->
-            <div class="input-contenedor">
+            <div id="div_correo" class="input-contenedor">
                 <i class="fas fa-envelope icon"></i>
                 <input type="text" name="correo" placeholder="Correo Electronico">
             </div>
-            <div class="input-contenedor">
+            <div id="div_contraseña" class="input-contenedor">
                 <i class="fas fa-key icon"></i>
                 <input type="password" name="contrasena" placeholder="Contraseña">
             </div>
@@ -49,23 +49,26 @@
                     const mostrar_erro = document.createElement('div');//creacion de un nuevo div
                     mostrar_erro.textContent = "Usuario o contraseña incorrectos"; //asignacion de Texto al Div
 
-                    // Personalizacion del div
+                // Personalizacion del div
                 div_error.style.backgroundColor = '#e60f0f79';
-                div_error.style.borderRadius = '10px';
+                
                 div_error.style.display = "flex";
                 div_error.style.height = "40px";
                 div_error.style.alignItems = "center";
                 div_error.style.justifyContent = "center";
-                div_error.style.marginTop = "-10px";
-                div_error.style.marginBottom = "5px";
+                /*margen*/
+                div_error.style.marginTop = "-15px";
+                div_error.style.marginBottom = "10px";
+                /*borde*/
                 div_error.style.border = "solid";
-                div_error.style.borderColor ="red";
-
+                div_error.style.borderColor ="#d40101";
+                div_error.style.borderRadius = '10px';
+                    /*Personalizar mensaje*/
                     mostrar_erro.style.fontFamily = "'Overpass', sans-serif";
                     mostrar_erro.style.fontSize = "20px"
                     mostrar_erro.style.textAlign = "center"
                     mostrar_erro.style.color  ="white"
-                    div_error.appendChild(mostrar_erro); //Agregar nuevo div con mensaje al div_error
+                div_error.appendChild(mostrar_erro); //Agregar nuevo div con mensaje al div_error
             }
         </script>
 </body>
