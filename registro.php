@@ -6,30 +6,30 @@ if($conex)
 }
 if(isset($_POST['name']))
 {
-if(strlen($_POST['name']) >= 1)
-{
-$nombre = trim($_POST['nombre']);
-$correo = trim($_POST['correo']);
-$contrasena = trim($_POST['contrasena']);
-$consulta="INSERT INTO signup(nombre,correo,contrasena)VALUES('$nombre', '$correo', '$contrasena')";
-$resultado = mysqli_query($conex,$consulta);
-if($resultado)
-{
-    ?>
-    <h3>Te has inscrito correctamente</h3>
-    <?php
-}
-else{
-    ?>
-    <h3 class="bad">Ups ha ocurrido un error</h3>
-    <?php
-}
-}
-else{
-    ?>
-    <h3 class="bad">Por favor complete los campos</h3>
-    <?php
-}
+    if(strlen($_POST['name']) >= 1)
+    {
+        $nombre = trim($_POST['nombre']);
+        $correo = trim($_POST['correo']);
+        $contrasena = trim($_POST['contrasena']);
+        $consulta="INSERT INTO signup(nombre,correo,contrasena)VALUES('$nombre', '$correo', '$contrasena')";
+        $resultado = mysqli_query($conex,$consulta);
+        if($resultado)
+        {
+            ?>
+            <h3>Te has inscrito correctamente</h3>
+            <?php
+        }
+        else{
+            ?>
+            <h3 class="bad">Ups ha ocurrido un error</h3>
+            <?php
+        }
+    }
+    else{
+        ?>
+        <h3 class="bad">Por favor complete los campos</h3>
+        <?php
+    }
 }
 ?>  -->
 
